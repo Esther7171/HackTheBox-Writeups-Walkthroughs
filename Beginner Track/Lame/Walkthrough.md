@@ -142,7 +142,7 @@ drwxr-xr-x    2 0        65534        4096 Mar 17  2010 ..
 226 Directory send OK.
 ftp> 
 ```
-### FTP is empty
+### It worked but FTP is empty
 
 ## Let search for backdoor in VSFTPd version 2.3.4 in metasploit-framework
 ```
