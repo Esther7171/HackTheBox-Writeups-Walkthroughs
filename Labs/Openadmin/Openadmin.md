@@ -1105,5 +1105,3 @@ References
 [^2]: https://hashes.org / https://hashmob.net
 [^3]: https://www.whitehatsec.com/blog/magic-hashes/
 [^4]: https://gtfobins.github.io/
-
-- [[]]
