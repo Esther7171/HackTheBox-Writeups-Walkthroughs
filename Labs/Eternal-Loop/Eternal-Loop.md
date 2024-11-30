@@ -1,9 +1,9 @@
 # 🧩 Eternal Loop
 
-Tags: #🧩
+<!-- Tags: #🧩
 Related to: [[head]], [[john]], [[sqlitebrowser]], [[sum]], [[unzip]]
 See also:
-Previous: [[HTB]]
+Previous: [[HTB]]-->
 
 # Description
 
@@ -166,7 +166,3 @@ But let's try something easier first:
 ```
 
 `HTB{...}`
-
-# References
-
-https://www.kali.org/tools/john/
