@@ -1,9 +1,9 @@
 # 🧩 MisDIRection
 
-Tags: #🧩
+<!-- Tags: #🧩
 Related to: [[awk]], [[base64]], [[find]], [[grep]], [[sort]], [[tr]]
 See also:
-Previous: [[HTB]]
+Previous: [[HTB]]-->
 
 # Description
 
