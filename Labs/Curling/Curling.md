@@ -1,12 +1,12 @@
 # 📦 HTB | curling
 
-Tags: #📦
+<!--Tags: #📦
 Related to: 
 See also: [[PHP]], [[base64]], [[bash]], [[burpsuite]], [[bzcat]], [[bzip2]], [[cewl]], [[cron]] ,[[crontab]], [[curl]], [[cyberchef]], [[dev shm]], [[file]], [[gzip]], [[joomscan]], [[nc]], [[nmap]], [[powershell]], [[pspy]], [[python]], [[rlwrap]], [[stty]], [[tar]], [[tee]], [[watch]], [[wfuzz]], [[wget]], [[xxd]], [[zcat]]
 Previous: [[01 HTB/HTB]]
 
 - [x] official walkthrough
-- [x] ippsec
+- [x] ippsec-->
 
 ## Enumeration
 
@@ -618,7 +618,6 @@ output = "/etc/crontab"
 
 # References
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Paajc2Dupms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [^1]: https://www.exploit-db.com/exploits/46200
 [^2]: https://www.cvedetails.com/vulnerability-list/vendor_id-3496/Joomla.html
