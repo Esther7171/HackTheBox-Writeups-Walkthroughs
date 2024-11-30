@@ -1,12 +1,12 @@
 # 📦 HTB | openadmin
 
-Tags: #📦
+<!-- Tags: #📦
 Related to: 
 See also: [[MySQL]], [[PHP]], [[awk]], [[bash]], [[burpsuite]], [[chmod chown]], [[curl]], [[echo]], [[find]], [[git]], [[gobuster]], [[grep]], [[gtfobins lolbas]], [[head]], [[ifconfig]], [[iptables]], [[medusa]], [[nano]], [[ncrack]], [[nc]], [[nmap]], [[peass]], [[ps]], [[python]], [[searchsploit]], [[sed]], [[ssh]], [[stty]], [[su]], [[sucrack]], [[tail]], [[vi vim]]
 Previous: [[01 HTB/HTB]]
 
 - [ ] official walkthrough
-- [x] ippsec
+- [x] ippsec -->
 
 ## Enumeration
 
@@ -1100,7 +1100,6 @@ To:		www-data:x:33:33:www-data:/var/www:/bin/bash
 
 References
 ----
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fdD-JTlkd3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [^1]: https://github.com/Tib3rius/privilege-escalation-awesome-scripts-suite
 [^2]: https://hashes.org / https://hashmob.net
