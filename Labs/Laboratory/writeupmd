@@ -1,12 +1,12 @@
 # 📦 HTB | laboratory
 
-Tags: #📦
+<!-- Tags: #📦
 Related to: 
 See also: [[nmap]], [[xclip]]
 Previous: [[01 HTB/HTB]]
 
 - [ ] official walkthrough
-- [ ] ippsec
+- [ ] ippsec -->
 
 Run nmap script and version scan:
 
@@ -83,7 +83,3 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
 
 ```
-
-References
-----
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ozmHeApuSj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
