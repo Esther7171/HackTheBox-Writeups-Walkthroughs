@@ -1,10 +1,5 @@
 # 🧩 Canvas
 
-Tags: #🧩
-Related to: [[jsnice]]
-See also:
-Previous: [[HTB]]
-
 # Description
 
 We want to update our website but we are unable to because the developer who coded this left today. Can you take a look?
