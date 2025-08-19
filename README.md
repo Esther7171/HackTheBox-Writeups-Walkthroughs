@@ -10,7 +10,7 @@ This repository contains walkthroughs for various machines and academy exercises
 | Machines Name | Difficulty | Type | Exploitation Techniques |
 |:---:|:---:|---|---|---|
 | [BoardLight](https://github.com/Esther7171/HTB-Walkthroughs/blob/main/Labs/BoardLight/Walkthrough.pdf) | Easy | Linux | CVE-2023-30253 |
-|
+
 
 # Challanges Walkthrough
 
