@@ -6,8 +6,6 @@
 
 Welcome to my **Hack The Box (HTB) write-ups repository**, a comprehensive collection of **hands-on cybersecurity walkthroughs**. This repository covers **HTB Academy labs, challenges, and machines**, including detailed step-by-step guides, screenshots, and relevant resources to help beginners and professionals sharpen their penetration testing and ethical hacking skills.
 
-> ⚠️ **Disclaimer:** All content is intended for **educational purposes only**. Do **not attempt these exploits on unauthorized systems**. Use this repository strictly for learning on HTB platforms.
-
 ---
 
 ## 📂 Repository Structure
